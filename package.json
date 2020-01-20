@@ -1,0 +1,33 @@
+{
+  "name": "lx_react-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:react": "webpack --config ./node_modules/lx-webpack/lib/webpack.prod.js",
+    "dev:react": "webpack-dev-server --config ./node_modules/lx-webpack/lib/webpack.dev.js --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louxunws/lx_react-vue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louxunws/lx_react-vue/issues"
+  },
+  "homepage": "https://github.com/louxunws/lx_react-vue#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "lx-webpack": "^1.0.8",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
