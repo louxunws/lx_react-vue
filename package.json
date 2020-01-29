@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:react": "webpack --config ./node_modules/lx-webpack/lib/webpack.prod.js",
-    "dev:react": "webpack-dev-server --config ./node_modules/lx-webpack/lib/webpack.dev.js --open"
+    "dev:react": "webpack-dev-server --config ./node_modules/lx-webpack/lib/webpack.dev.js --open",
+    "build:vue": "webpack --config ./node_modules/lx-webpack/lib/webpack.vue.prod.js",
+    "dev:vue": "webpack-dev-server --config ./node_modules/lx-webpack/lib/webpack.vue.dev.js --open"
   },
   "repository": {
     "type": "git",
@@ -25,8 +27,13 @@
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "com_lx": "^1.0.1",
     "friendly-errors-webpack-plugin": "^1.7.0",
-    "lx-webpack": "^1.0.8",
+    "lx-webpack": "^1.0.9",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.8.3",
+    "vue-template-compiler": "^2.6.11",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   }
