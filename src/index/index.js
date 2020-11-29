@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import RenderCom from './config/render.jsx'
+import Layout from './Layout/index.jsx'
 
 class Index extends React.Component{
     constructor(props) {
@@ -22,6 +22,6 @@ class Index extends React.Component{
 }
 
 ReactDom.render(
-    <RenderCom/>,
+    <Layout/>,
     document.getElementById('root')
 )

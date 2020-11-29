@@ -1,0 +1,28 @@
+@baseColor: rgb(24, 144, 255);
+.menuContainer{
+    .logo{
+        font-size: 20px;
+        height: 48px;
+        color: @baseColor;
+        text-align: center;
+        padding: 6px 12px;
+        font-weight: 600;
+        span {
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            background: rgba(255, 255, 255, 0.3);
+        }
+    }
+    .menuItem {
+        color: #fff;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 34px;
+        cursor: pointer;
+    }
+    .menuItem[data-selected = true] {
+        background: @baseColor;
+    }
+}   
