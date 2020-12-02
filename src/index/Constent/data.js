@@ -10,5 +10,9 @@ export const MENUDATA = [
     {
         name: 'Render Props',
         key: 'RENDER_PROPS'
+    },
+    {
+        name: 'Context',
+        key: 'CONTEXT'
     }
-]
+]   

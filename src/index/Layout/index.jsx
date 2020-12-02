@@ -4,6 +4,7 @@ import Menu from '../Page/Menu/index.jsx';
 import RenderProps from '../Page/RenderProps/index.jsx';
 import G6 from '../Page/G6/index.jsx';
 import G2 from '../Page/G2/index.jsx';
+import Context from '../Page/Context/index.jsx';
 import './index.less';
 
 const Layout = ({}) => {
@@ -22,6 +23,10 @@ const Layout = ({}) => {
             case 'G2':
                 return <G2/>
             break;
+
+            case 'CONTEXT':
+                return <Context/>
+            break;
         }
     }
 
@@ -39,7 +44,7 @@ const Layout = ({}) => {
             <div className='header'>
                 <Header/>
             </div>
-            <div>
+            <div className='bodyContent'  style={{height: document.body.clientHeight-100}}>
                 {renderCom(selectedCom)}
             </div>
         </div>
