@@ -14,5 +14,9 @@ export const MENUDATA = [
     {
         name: 'Context',
         key: 'CONTEXT'
+    },
+    {
+        name: 'Drag And Drop',
+        key: 'DRAG_AND_DROP'
     }
 ]   

@@ -5,6 +5,7 @@ import RenderProps from '../Page/RenderProps/index.jsx';
 import G6 from '../Page/G6/index.jsx';
 import G2 from '../Page/G2/index.jsx';
 import Context from '../Page/Context/index.jsx';
+import DragAndDrop from '../Page/DragAndDrop/index.jsx';
 import './index.less';
 
 const Layout = ({}) => {
@@ -26,6 +27,10 @@ const Layout = ({}) => {
 
             case 'CONTEXT':
                 return <Context/>
+            break;
+
+            case 'DRAG_AND_DROP':
+                return <DragAndDrop/>
             break;
         }
     }
